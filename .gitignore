@@ -141,7 +141,7 @@ vite.config.ts.timestamp-*
 =======
 /node_modules
 /package-lock.json
-/package.json
+
 /portfolio
 /zoom-clone
 >>>>>>> 10bce2f (..)
