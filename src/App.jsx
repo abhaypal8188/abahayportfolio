@@ -123,6 +123,13 @@ function App() {
     event.currentTarget.reset();
   };
 
+  const skillLabel = (value) => {
+    if (value >= 90) return "Expert";
+    if (value >= 86) return "Proficient";
+    if (value >= 83) return "Advanced";
+    return "Competent";
+  };
+
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
@@ -379,21 +386,21 @@ function App() {
           <div className="skills-grid">
             {skills.map((skill) => (
               <div key={skill.name} className="glass skill-card tilt-card">
-                <div
-                  className="skill-meter"
-                  style={{ "--value": `${skill.value}%`, "--accent": skill.accent }}
-                >
-                  <div className="skill-ring">
-                    <span>{skill.value}%</span>
+                <div className="skill-meter" style={{ "--accent": skill.accent }}>
+                  <div className="skill-meter-head">
+                    <div className="skill-score">{skill.value}%</div>
+                    <span className="skill-level">{skillLabel(skill.value)}</span>
+                  </div>
+                  <div className="skill-step-grid">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <span
+                        key={index}
+                        className={`skill-step ${skill.value >= (index + 1) * 20 ? "active" : ""}`}
+                      />
+                    ))}
                   </div>
                 </div>
                 <h4>{skill.name}</h4>
-                <div className="skill-bar-track">
-                  <div
-                    className="skill-bar-fill"
-                    style={{ width: `${skill.value}%`, background: skill.accent }}
-                  />
-                </div>
               </div>
             ))}
           </div>
