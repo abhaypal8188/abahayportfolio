@@ -10,14 +10,54 @@ const navItems = [
 ];
 
 const skills = [
-  { name: "React / Frontend", value: 93, accent: "var(--cyan)" },
-  { name: "Node.js / Express", value: 88, accent: "var(--green)" },
-  { name: "MongoDB", value: 84, accent: "var(--purple)" },
-  { name: "DSA / Problem Solving", value: 90, accent: "var(--cyan)" },
-  { name: "Javascript", value: 86, accent: "var(--purple)" },
-  { name: "Tailwind CSS", value: 83, accent: "var(--green)" },
-  { name: "Python", value: 84, accent: "var(--purple)" },
-  { name: "Git/Github", value: 91, accent: "var(--green)" },
+  {
+    name: "React / Frontend",
+    value: 93,
+    accent: "var(--cyan)",
+    note: "Component systems, hooks, and polished UI states",
+  },
+  {
+    name: "Node.js / Express",
+    value: 88,
+    accent: "var(--green)",
+    note: "API design, middleware patterns, and server-side logic",
+  },
+  {
+    name: "MongoDB",
+    value: 84,
+    accent: "var(--purple)",
+    note: "Schema-free data models and efficient CRUD flows",
+  },
+  {
+    name: "DSA / Problem Solving",
+    value: 90,
+    accent: "var(--cyan)",
+    note: "Algorithmic thinking for performant solutions",
+  },
+  {
+    name: "Javascript",
+    value: 86,
+    accent: "var(--purple)",
+    note: "Modern ESNext patterns and reusable abstractions",
+  },
+  {
+    name: "Tailwind CSS",
+    value: 83,
+    accent: "var(--green)",
+    note: "Utility-first layouts with sharp responsive visuals",
+  },
+  {
+    name: "Python",
+    value: 84,
+    accent: "var(--purple)",
+    note: "Scripting, automation, and backend data handling",
+  },
+  {
+    name: "Git/Github",
+    value: 91,
+    accent: "var(--green)",
+    note: "Version control workflows and collaborative releases",
+  },
 ];
 
 const experiences = [
@@ -387,11 +427,12 @@ function App() {
             {skills.map((skill) => (
               <div key={skill.name} className="glass skill-card tilt-card">
                 <div className="skill-meter" style={{ "--accent": skill.accent }}>
-                  <div className="skill-meter-head">
-                    <div className="skill-score">{skill.value}%</div>
-                    <span className="skill-level">{skillLabel(skill.value)}</span>
+                  <div className="skill-title-row">
+                    <h4>{skill.name}</h4>
+                    <span className="skill-pill">{skillLabel(skill.value)}</span>
                   </div>
-                  <div className="skill-step-grid">
+                  <p className="skill-note">{skill.note}</p>
+                  <div className="skill-meter-steps">
                     {Array.from({ length: 5 }, (_, index) => (
                       <span
                         key={index}
@@ -400,7 +441,6 @@ function App() {
                     ))}
                   </div>
                 </div>
-                <h4>{skill.name}</h4>
               </div>
             ))}
           </div>
