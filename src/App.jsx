@@ -93,12 +93,12 @@ const experiences = [
 
 const projects = [
   {
-    title: "Video Conferencing Platform ",
+    title: "AI Image Generator Web Application ",
     description:
-      " Developed a scalable real-time video conferencing platform supporting multiple users using WebRTC and Socket.io.Designed features like meeting rooms, screen sharing, chat messaging, and user authenticatio",
-    github: "https://github.com/yourusername/neurohire-ai",
-    live: "https://yourusername.github.io/neurohire-ai",
-    stack: "WebRTC, Node.js, Express.js, Socket.io, React.js",
+      " Developed an AI Image Generator Web Application using React.js with prompt-based text-to-image generation functionality.Integrated external AI APIs to generate high-quality images dynamically based on user input prompts.Designed a responsive and modern user interface for seamless user experience across devices.",
+    github: "https://github.com/abhaypal8188/image-generator",
+    live: "https://image-generator-nu-nine.vercel.app",
+    stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, AI Image Generation API, HTML5, CSS3 ",
   },
   {
     title: "Social Media Platform",
