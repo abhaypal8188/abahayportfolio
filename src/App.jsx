@@ -101,12 +101,12 @@ const projects = [
     stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, AI Image Generation API, HTML5, CSS3 ",
   },
   {
-    title: "Social Media Platform",
+    title: "Expense Tracker Web Application",
     description:
-      " Developing a full-stack social media platform with user authentication and profile management.Implementing features like post creation, likes, comments, and real-time interactions.Designed RESTful APIs for seamless communication between frontend and backend",
-    github: "https://github.com/yourusername/cipher-chat",
-    live: "https://yourusername.github.io/cipher-chat",
-    stack: "React.js, Node.js, Express.js, MongoDB, REST APIs",
+      " Developed a full-stack Expense Tracker Web Application using MERN stack for managing personal finances efficiently.Implemented secure user authentication and CRUD operations for adding, editing, and deleting income/expense records.Integrated interactive charts and analytics dashboard to visualize monthly spending patterns.",
+    github: "https://github.com/abhaypal8188/expense-track",
+    live: "https://expense-track-b5ay.vercel.app/",
+    stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, Chart.js, HTML5, CSS3, Vercel, GitHub",
   },
   {
     title: "SigmaGPT — AI Chat Application ",
