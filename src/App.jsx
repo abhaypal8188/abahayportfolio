@@ -70,7 +70,7 @@ const experiences = [
     metric: 88,
   },
 
-  
+  /*
   {
     title: "Freelance Web Developer",
     company: "Independent Projects",
@@ -88,7 +88,7 @@ const experiences = [
     metric: 74,
   },
   
-
+*/
 ];
 
 const projects = [
