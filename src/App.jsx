@@ -116,6 +116,19 @@ const projects = [
     live: "https://bookswap-p595.vercel.app/",
     stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, HTML5, CSS3, JWT Authentication, Vercel, GitHub",
   },
+
+  {
+    title: "Digital Complaint Management System", 
+    description:
+    "Developed a full-stack Digital Complaint Management System using MERN stack for online complaint registration and tracking.Implemented secure JWT-based authentication and role-based access for users and administrators.Built complaint submission, status tracking, update, and resolution management features.",
+    github:"https://github.com/abhaypal8188/digital-complaint",
+    live: "https://digital-complaint-aazy.vercel.app",
+    stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, JWT Authentication, HTML5, CSS3, Vercel, GitHub",
+
+  },
+
+
+
 ];
 
 const socialLinks = [
