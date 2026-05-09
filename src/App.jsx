@@ -109,12 +109,12 @@ const projects = [
     stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, Chart.js, HTML5, CSS3, Vercel, GitHub",
   },
   {
-    title: "SigmaGPT — AI Chat Application ",
+    title: "BookSwap Platform ",
     description:
-      "Developed an AI-powered chat application using OpenAI APIs for natural language processing and response gen-eration.Implemented REST API integration to handle user queries and generate real-time intelligent responses.",
-    github: "https://github.com/yourusername/quantum-campus",
-    live: "https://yourusername.github.io/quantum-campus",
-    stack: "OpenAI API, Node.js, Express.js, React.js, JavaScript",
+      "Developed a full-stack BookSwap Platform using MERN stack to enable users to exchange books online.Implemented secure JWT-based user authentication and authorization system.Built CRUD functionalities for adding, updating, searching, and managing book listings.",
+    github: "https://github.com/abhaypal8188/bookswap",
+    live: "https://bookswap-p595.vercel.app/",
+    stack: "MongoDB, Express.js, React.js, Node.js, JavaScript, REST API, HTML5, CSS3, JWT Authentication, Vercel, GitHub",
   },
 ];
 
